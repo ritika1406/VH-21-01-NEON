@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h2>Register</h2>
+
+</head>
+     <div class="card-body">
+
+      <form action="{% url 'ngo_register' %}" method="POST" novalidate>
+        
+         {% csrf_token %}
+		 {{form}}
+         
+      </div>
+         
+</html>
