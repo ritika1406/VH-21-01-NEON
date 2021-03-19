@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<h2>Register</h2>
+
+</head>
+     <div class="card-body">
+      <form action="{% url 'donor_register' %}" method="POST">
+         {% csrf_token %}
+         {{form}}
+      </div>
+      
+         
+</html>
