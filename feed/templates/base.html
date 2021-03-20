@@ -41,10 +41,11 @@
                 <a class="nav-link " href="{% url 'logout' %}" tabindex="-1">Logout</a>
               </li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search NGO's" aria-label="Search NGO's">
-              <button class="btn btn-outline-success" type="submit">Search </button>
-            </form>
+            <div class="d-flex">  
+              <a class="nav-link " href="{% url 'search' %}">
+                <button class="btn btn-outline-light" type="submit">Search </button>
+              </a>
+            </div>
           </div>
         </div>
       </nav>

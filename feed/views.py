@@ -4,7 +4,8 @@ from django.views.generic import ListView,CreateView,UpdateView,DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
 # Create your views here.
 
-
+def search(request):
+    return render(request,'search.html')
 
 def profile(request):
     return render(request,'profile.html')
